@@ -1,0 +1,160 @@
+
+body { background-color: #F5F5F5;
+}
+
+.sidenav {
+  height: 100%;
+  width: 33%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+  padding-top: 10px;
+  padding-left: 4%;
+}
+
+.sidenav a {
+/*  padding: 6px 8px 6px 0px;
+*/  text-decoration: none;
+  font-size: 18px;
+  font-weight: 300;
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #998346;
+  line-height: 95%;
+  display: block;
+/*  padding-left:5%;
+*/}
+
+.sidenav a:hover {
+  color: #E6E6E6;
+  font-weight:900;
+}
+
+
+
+.title {
+  padding: 6px 8px 15px 0px;
+  text-decoration: none;
+  font-size: 50px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 85%;
+  color: #323E6A;
+/*  color: #BB5F2D;
+*/  display: block;
+}
+
+
+.main {
+  height: 38%;
+  width: 53%;
+  position: fixed;
+/*  z-index: 1;
+*//*  top: 0;
+  left: 0;*/
+  margin-left: 37%;
+  margin-top:18%;
+  font-weight: 200;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  padding-top:0%;
+  padding-left: 0%;
+  padding-right: 50%;
+  padding-bottom: 0%;
+/*  background-color: #ffffff; 
+*/
+}
+
+.main h2 {
+  font-size: 40px;
+  font-style: normal;
+/*  font-family: 'Fira Sans', sans-serif;
+*/  font-weight: 300;
+  font-family: 'Lora', serif;
+  color: #6A5B32;
+  position: sticky;
+}
+
+.main h4 {
+  overflow: scroll;
+  height:100%;
+  font-weight: 200;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-style: italic;
+  font-size: 14px;
+  margin-top:-20px;
+}
+
+.main a {
+  font-family: 'IBM Plex Sans', sans-serif;
+  color: #998346;
+}
+
+.main em{
+  color: #998346;
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.main a:hover {
+  color: #E6E6E6;
+  font-weight:900;
+}
+
+.sidenav-right {
+  height: 100%;
+  width: 10%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #F5F5F5;
+  overflow-x: hidden;
+  padding-top: 10px;
+  margin-left: 90%;
+  float: right;
+  transform: rotate(180deg);
+  font-size: 41px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 85%;
+  color: #323E6A;;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+ 
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .title {font-size:30px;}
+  .main {padding-left: 5%;}
+
+}
