@@ -58,6 +58,12 @@ body { background-color: #B2AEA2;
 
 .title ac{
   color: #4F4424;
+  letter-spacing: -10px;
+  font-size: 100px;
+}
+
+.title sp{
+  letter-spacing: -22px;
 }
 
 
