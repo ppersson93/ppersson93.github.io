@@ -13,10 +13,10 @@
 <body>
     <div id="sidenav"></div>
     <script>
-        fetch('../sidebar.html')
+        fetch("/sidebar/sidebar.html")
             .then(response => response.text())
             .then(data => {
-                document.getElementById('sidebar').innerHTML = data;
+                document.getElementById('sidenav').innerHTML = data;
             });
     </script>
 
