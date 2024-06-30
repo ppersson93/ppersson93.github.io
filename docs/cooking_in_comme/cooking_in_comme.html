@@ -12,15 +12,14 @@
 </head>
 <body>
 
-<div class="sidenav">
-  <a href="/"><span class="title">Perni<sp>l</sp><ac>.</ac>la</span></a>
-  <img src="https://github.com/ppersson93/ppersson93.github.io/blob/main/docs/website_photo_1.png?raw=true" alt = "Jökulsárlón, Iceland" style="width:250px;height:250px;" href="/">
-  <p style = "padding-left:0%;"><a href="/about_me/about_me.html">about me</a>
-  <a href="/text_adventures/text_adventures.html">text adventures</a>
-  <a href="/syllabus/syllabus.html">syllabus</a>
-  <a href="/walks/walks.html">walks</a>
-  <a href="/cooking_in_comme/cooking_in_comme.html">cooking in comme</a><p>
-</div>
+    <div id="sidenav"></div>
+    <script>
+        fetch("../sidebar/sidebar.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('sidenav').innerHTML = data;
+            });
+    </script>
 
 <div class="main">
 
