@@ -104,6 +104,7 @@ body { background-color: #B2AEA2;
 /*  font-family: 'Fira Sans', sans-serif;
 */  font-weight: 300;
   font-family: 'Lora', serif;
+  letter-spacing: -1px;
   color: #4F4424;
   position: sticky;
 }
